@@ -1,0 +1,24 @@
+{
+  "name": "unit6-todoapplication",
+  "version": "1.0.0",
+  "description": "Applying Node.js, Express and Express routes, and jQuery's AJAX method",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.16.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/veronicorn/unit6-todoapplication.git"
+  },
+  "author": "Veronica Lee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/veronicorn/unit6-todoapplication/issues"
+  },
+  "homepage": "https://github.com/veronicorn/unit6-todoapplication#readme"
+}
