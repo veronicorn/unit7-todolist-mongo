@@ -35,6 +35,14 @@ header {
     font-weight: 700;
 }
 
+#todos {
+    display: grid;
+    grid-template-rows: auto;
+    grid-gap: 20px;
+    padding: 15px;
+    color: black;
+}
+
 button {
     border: 0;
     background-color: #ffffff;

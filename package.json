@@ -4,7 +4,8 @@
   "description": "Applying Node.js, Express and Express routes, and jQuery's AJAX method",
   "main": "server.js",
   "dependencies": {
-    "express": "^4.16.3"
+    "express": "^4.16.3",
+    "mongoose": "^5.3.0"
   },
   "devDependencies": {},
   "scripts": {

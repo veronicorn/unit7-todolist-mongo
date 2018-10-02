@@ -1,5 +1,5 @@
-// Imports express into our app and sets it up for use
 const express = require('express');
+const mongoose = require('mongoose');
 const path = require('path');
 
 const app = express();
@@ -14,8 +14,9 @@ app.use(express.json());
 // Sets our server to use the public directory for static assets
 app.use(express.static(path.join(__dirname, 'public')));
 
+mongoose.connect('mongodb://vlee917:todoapp102@ds121163.mlab.com:21163/heroku_qjnkhz6m', { useNewUrlParser: true });
+
 // Routes
-// -----------------
 
 require('./routes/api-routes.js')(app);
 require('./routes/html-routes.js')(app);
