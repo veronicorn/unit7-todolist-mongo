@@ -23,22 +23,19 @@ $(function () {
         const todoEl = $('<div>').addClass('todo');
 
         const label = $('<label>').addClass('fancy-checkbox');
-        // const checkbox = $('<input type="checkbox">')
-        //     .attr('checked', todo.completed)
-        //     .addClass('completed')
-        //     .attr('data-index', index);
 
-
-        // label.append(checkbox);
-
-        label.append('<i class="far fa-square unchecked">');
-
-        label.append('<i class="completed">')
+        const checkbox = $('<input type="checkbox">')
             .attr('checked', todo.completed)
             .addClass('completed')
             .attr('data-index', index);
 
-        todoEl.append(
+        label.append(checkbox);
+        if (todo.completed) {
+            label.append('<i class="fas fa-check-square checked">')
+        }
+        label.append('<i class="far fa-square unchecked">');
+
+            todoEl.append(
             label,
 
             $('<span>').text(todo.text).addClass('list-text'),
@@ -54,7 +51,8 @@ $(function () {
     }
 
     $(document).on('click', '.unchecked', function(){ 
-        $('.completed').toggleClass('fas fa-check-square checked');
+        // $('.completed').toggleClass('fas fa-check-square checked');
+        renderTodos();
     }); 
 
     const renderTodos = function (outputElement, todos) {
