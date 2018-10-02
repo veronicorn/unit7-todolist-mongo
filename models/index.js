@@ -1,3 +1,3 @@
 module.exports = {
-    Inventory: require("./Todo")
+    Todo: require("./Todo")
   };  
